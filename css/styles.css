@@ -504,12 +504,7 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 .footer-form {
-    width: 264px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
     display: flex;
     gap: 24px;
 
@@ -522,7 +517,7 @@ border-bottom: 1px solid #E7E9FC;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+    background-color: transparent;
 
 }
 
@@ -587,11 +582,6 @@ border-bottom: 1px solid #E7E9FC;
 
 }
 
-.backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
 
 .modal {
     position: absolute;
@@ -608,7 +598,10 @@ border-bottom: 1px solid #E7E9FC;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
 }
-
+.modal-backdropk .is-open{
+    opacity: 1;
+    pointer-events: auto;
+}
 .modal-close-btn {
     position: absolute;
     top: 24px;
@@ -797,11 +790,9 @@ border-bottom: 1px solid #E7E9FC;
     letter-spacing: 0.04em;
 }
 
-.check-link {
-    color: #4d5ae5;
-    text-decoration-line: underline;
-}
 
+.check-icon{
+    color: F4F4FD}
 .send-btn {
     display: block;
     min-width: 169px;
